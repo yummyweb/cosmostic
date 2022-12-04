@@ -1,0 +1,35 @@
+{
+  "version": "0.1.0",
+  "description": "A Cosmos Wallet inside MetaMask using Snaps.",
+  "proposedName": "Cosmostic Snap",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MetaMask/template-snap-monorepo.git"
+  },
+  "source": {
+    "shasum": "odxc9z+YTcZNVErKBHygLJBuLoFzo1v4vOHCW9i2Yb8=",
+    "location": {
+      "npm": {
+        "filePath": "dist/bundle.js",
+        "iconPath": "images/icon.svg",
+        "packageName": "snap",
+        "registry": "https://registry.npmjs.org/"
+      }
+    }
+  },
+  "initialPermissions": {
+    "endowment:network-access": {},
+    "snap_getBip44Entropy": [
+      {
+        "coinType": 118
+      },
+      {
+        "coinType": 1
+      }
+    ],
+    "snap_confirm": {},
+    "snap_manageState": {},
+    "snap_notify": {}
+  },
+  "manifestVersion": "0.1"
+}
